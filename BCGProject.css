@@ -1,0 +1,107 @@
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 45px 45px 0;
+}
+
+.qvplaceholder, .qvobject {
+	flex: 1 1 auto;
+	height: 300px;
+	min-width: 400px;
+	/*margin: 5px 0 0 5px;*/
+}
+
+#popup {
+	background-color: #c3534b;
+	color: #FFFFFF;
+	position: fixed;
+	max-width: 250px;
+	padding: 10px;
+	margin: 10px;
+	bottom: 0;
+	right: 0;
+	display: none;
+	border-radius: 5px;
+	z-index: 6;
+	font-family: sans-serif;
+}
+
+.close {
+	cursor: pointer;
+	background: 0 0;
+	border: 0;
+	float: right;
+	font-size: 21px;
+	font-weight: 700;
+	line-height: 1;
+	color: #000;
+	text-shadow: 0 1px 0 #fff;
+	opacity: .2;
+	position: absolute;
+	right: 9px;
+	top: 7px;
+}
+
+.close:hover {
+	opacity: .5;
+}
+
+#popupText {
+	margin-right: 23px;
+}
+
+body{
+	background-color: #f0f0f0 !important;
+}
+
+#QV07{
+	width:5px;
+	height: 25px;
+}
+
+#QV04, #QV05, #QV06{
+	height: 150px;
+}
+
+#QV01, #QV02, #QV03{
+	height: 180px;
+}
+
+*{
+	font-family: 'Hind', sans-serif;
+}
+
+.navbar-brand{
+	color: #17B169 !important;
+	font-size: 30px !important;
+}
+.c1, .c2, .c3{
+	border: #17B169 solid 1px !important;
+	border-radius: 0px !important;
+}
+
+.header{
+	background-color: #183375;
+	padding: 8px;
+	margin-bottom: 8px;
+}
+
+.Main{
+	float:right;
+}
+.col-md-5.lstt{
+	margin-top: -32px;
+    width: 46%;
+    margin-left: 702px;
+}
+.p3{
+	background-color: #183375;
+}
+/* .sider{
+	background-color: #183375;
+	margin-top: -8px;
+	float: left;
+	width: 130px; 
+	height: 110vh;  
+
+} */
