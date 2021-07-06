@@ -39,7 +39,7 @@ background-color:transparent  !important;
 
 .qvplaceholder, .qvobject {
 	flex: 1 1 auto;
-	height: 300px;
+	height: 331px;
 	min-width: 400px;
 //	margin: 5px 0 0 5px;
 }
@@ -93,11 +93,16 @@ body{
 }
 
 #QV04, #QV05, #QV06{
-	height: 150px;
+	height: 193px;
+}
+
+.chart{
+height: 150px;
 }
 
 #QV01, #QV02, #QV03{
-	height: 180px;
+	height: 193px;
+	
 }
 
 *{
@@ -129,6 +134,11 @@ body{
 }
 .p3{
 	background-color: #183375;
+}
+.card-body {
+    flex: 1 1 auto;
+    box-sizing: border-box;
+    padding: 5px 5px;
 }
 /* .sider{
 	background-color: #183375;

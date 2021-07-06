@@ -38,24 +38,48 @@ require( ["js/qlik"], function ( qlik ) {
 	var app3 = qlik.openApp('BCG New (3).qvf', config);
 
 	var app4 = qlik.openApp('BCG New (3).qvf', config);
+	var app5 = qlik.openApp('BCG New (3).qvf', config);
+
+	var app6 = qlik.openApp('BCG New (3).qvf', config);
+
+	var app7 = qlik.openApp('BCG New (3).qvf', config);
+
+	var app8 = qlik.openApp('BCG New (3).qvf', config);
+
+	var app9 = qlik.openApp('BCG New (3).qvf', config);
+
+	var app10 = qlik.openApp('BCG New (3).qvf', config);
+
+	var app11 = qlik.openApp('BCG New (3).qvf', config);
+
+	var app12 = qlik.openApp('BCG New (3).qvf', config);
+
 
 	//get objects -- inserted here --
-	app4.getObject('QV01','APRUWVP');
+	app12.getObject('QV07','JJQCA');
+	app11.getObject('QV06','jHQbqc');
+	app10.getObject('QV05','LBPNS');
+	app9.getObject('QV03','LBPNS');
+	
+	app7.getObject('QV02','JGEgwK');
+	app6.getObject('QV04','JGEgwK');
+	app5.getObject('QV01','APRUWVP');
 	
 	
 	
 	
 	
-	app.getObject('QV07','MmpPrMU');
 	
 	
 	
 	
 	
 	
-	app.getObject('QV06','tGxnRCY');
-	app.getObject('QV05','XcdKfea');
-	app.getObject('QV04','YWaC');
+	
+	
+	
+	
+	
 	
 	
 	
