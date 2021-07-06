@@ -1,14 +1,47 @@
-.flex-container {
-	display: flex;
-	flex-wrap: wrap;
-	margin: 0 45px 45px 0;
+.menuicon:hover{
+background-color: rgb(255,255,255,0.2) !important;
 }
+
+#logo:hover{
+border:1px solid white;
+}
+
+.col-md-5.lstt {
+ margin-left: 976px;
+    width: 437px;
+}
+
+
+.fixchart{
+border-radius:10px !important;
+//border:1px solid black !important;
+}
+
+.nav-link{
+	color:black  !important;
+}
+
+
+.nav-link:hover{
+border-top:0px solid !important;
+border-left:0px solid !important;
+border-right:0px solid !important;
+border-bottom:0px solid blue !important;
+}
+
+.nav-link.active{
+color:blue  !important;
+border:0px solid !important;
+border-bottom:2px solid blue !important;
+background-color:transparent  !important;
+}
+
 
 .qvplaceholder, .qvobject {
 	flex: 1 1 auto;
 	height: 300px;
 	min-width: 400px;
-	/*margin: 5px 0 0 5px;*/
+//	margin: 5px 0 0 5px;
 }
 
 #popup {

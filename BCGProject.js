@@ -31,20 +31,62 @@ require( ["js/qlik"], function ( qlik ) {
 
 	var app2 = qlik.openApp('Final Visualization.qvf', config);
 
+	var app = qlik.openApp('Final - JSW.qvf', config);
+
+	var app1 = qlik.openApp('BCG_Final.qvf', config);
+
+	var app3 = qlik.openApp('BCG New (3).qvf', config);
+
+	var app4 = qlik.openApp('BCG New (3).qvf', config);
+
 	//get objects -- inserted here --
-	app2.getObject('CurrentSelections','CurrentSelections');
-	app2.getObject('QV05','SnwCctu');
+	app4.getObject('QV01','APRUWVP');
 	
-	app2.getObject('QV03','YzuLP');
-	app2.getObject('QV02','FKwYty');
-	app2.getObject('QV01','TPmZkUy');
-	app2.getObject('QV06','JyESzR');
-	app2.getObject('QV07','KTUX');
-	app2.getObject('QV04','RmEQRVy');	
+	
+	
+	
+	
+	app.getObject('QV07','MmpPrMU');
+	
+	
+	
+	
+	
+	
+	app.getObject('QV06','tGxnRCY');
+	app.getObject('QV05','XcdKfea');
+	app.getObject('QV04','YWaC');
+	
+	
+	
+	
+	
+	
+	
+	
+		
 		
 	//create cubes and lists -- inserted here --
 	
+	// jQuerry	
+$(document).ready(function () {
+
+
+
+//$('#status').text($('.nav-link.active:last').html());
+
+$('#1id').click(function(){$('#status').text('Overview');});
+$('#2id').click(function(){$('#status').text('Availability');});
+$('#3id').click(function(){$('#status').text('Yield');});
+$('#4id').click(function(){$('#status').text('BOF Ops Parameter');});
+
+	$('#sms1').click(function(){$('#smsid').text('SMS 1');});
+	$('#sms2').click(function(){$('#smsid').text('SMS 2');});
+	$('#sms3').click(function(){$('#smsid').text('SMS 3');});
 	
+	$('.clear_selections').on('click',function(){app.clearAll();});
+	
+});
 	
 } );
 
