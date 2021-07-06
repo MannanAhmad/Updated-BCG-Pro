@@ -29,15 +29,25 @@ require( ["js/qlik"], function ( qlik ) {
 	//callbacks -- inserted here --
 	//open apps -- inserted here --
 
-	var app2 = qlik.openApp('Final Visualization.qvf', config);
 
-	var app = qlik.openApp('Final - JSW.qvf', config);
+	var app9 = qlik.openApp('BCG New (3).qvf', config);
 
-	var app1 = qlik.openApp('BCG_Final.qvf', config);
+	var app10 = qlik.openApp('BCG New (3).qvf', config)
+
+	var app15 = qlik.openApp('BCG New (3).qvf', config);
+
+	var app16 = qlik.openApp('BCG New (3).qvf', config);
+
+	var app = qlik.openApp('Data_Model_Invoice.qvf', config);
+
+	var app1 = qlik.openApp('BCG New (3).qvf', config);
+
+	var app2 = qlik.openApp('BCG New (3).qvf', config);
 
 	var app3 = qlik.openApp('BCG New (3).qvf', config);
 
 	var app4 = qlik.openApp('BCG New (3).qvf', config);
+
 	var app5 = qlik.openApp('BCG New (3).qvf', config);
 
 	var app6 = qlik.openApp('BCG New (3).qvf', config);
@@ -46,26 +56,37 @@ require( ["js/qlik"], function ( qlik ) {
 
 	var app8 = qlik.openApp('BCG New (3).qvf', config);
 
-	var app9 = qlik.openApp('BCG New (3).qvf', config);
-
-	var app10 = qlik.openApp('BCG New (3).qvf', config);
-
 	var app11 = qlik.openApp('BCG New (3).qvf', config);
 
 	var app12 = qlik.openApp('BCG New (3).qvf', config);
 
+	var app13 = qlik.openApp('BCG New (3).qvf', config);
+
+	var app14 = qlik.openApp('BCG New (3).qvf', config);
+
+	var app17 = qlik.openApp('BCG New (3).qvf', config);
+
+	var app18 = qlik.openApp('BCG New (3).qvf', config);
+
+	var app19 = qlik.openApp('BCG New (3).qvf', config);
+
+	var app20 = qlik.openApp('BCG New (3).qvf', config);
+
+	var app21 = qlik.openApp('BCG New (3).qvf', config);
+
+	var app22 = qlik.openApp('BCG New (3).qvf', config);
+
+	var app23 = qlik.openApp('BCG New (3).qvf', config);
 
 	//get objects -- inserted here --
-	app12.getObject('QV07','JJQCA');
-	app11.getObject('QV06','jHQbqc');
-	app10.getObject('QV05','LBPNS');
-	app9.getObject('QV03','LBPNS');
-	
-	app7.getObject('QV02','JGEgwK');
-	app6.getObject('QV04','JGEgwK');
-	app5.getObject('QV01','APRUWVP');
+	app23.getObject('clearb','mueWQNw');
 	
 	
+	app20.getObject('QV05','HEXCxA');
+	app19.getObject('QV14','mEXJF');
+	app18.getObject('QV13','mGyzxVF');
+	
+	app14.getObject('QV03','mGyzxVF');
 	
 	
 	
@@ -76,6 +97,15 @@ require( ["js/qlik"], function ( qlik ) {
 	
 	
 	
+	app1.getObject('QV10','GjbFwNJ');
+	
+	
+	
+	
+	app15.getObject('QV04','JJQCA');
+	
+	app10.getObject('QV02','LBPNS');
+	app9.getObject('QV01','APRUWVP');
 	
 	
 	
@@ -88,7 +118,13 @@ require( ["js/qlik"], function ( qlik ) {
 	
 	
 	
-		
+	
+	
+	
+	
+	
+	
+	
 		
 	//create cubes and lists -- inserted here --
 	
@@ -111,6 +147,49 @@ $('#4id').click(function(){$('#status').text('BOF Ops Parameter');});
 	$('.clear_selections').on('click',function(){app.clearAll();});
 	
 });
-	
-} );
+
+
+//Sub tabs
+ document.getElementById("1id").onclick = function() {  
+fun()  
+};  
+function fun() {  
+document.getElementById("overview").classList.remove("hideme");
+document.getElementById("availability").classList.add("hideme");
+document.getElementById("yield").classList.add("hideme");
+document.getElementById("bof").classList.add("hideme");
+};
+
+ document.getElementById("2id").onclick = function() {  
+fun1()  
+};  
+function fun1() {  
+document.getElementById("overview").classList.add("hideme");
+document.getElementById("availability").classList.remove("hideme");
+document.getElementById("yield").classList.add("hideme");
+document.getElementById("bof").classList.add("hideme");
+};
+
+ document.getElementById("3id").onclick = function() {  
+fun2()  
+};  
+function fun2() {  
+document.getElementById("overview").classList.add("hideme");
+document.getElementById("availability").classList.add("hideme");
+document.getElementById("yield").classList.remove("hideme");
+document.getElementById("bof").classList.add("hideme");
+};
+
+ document.getElementById("4id").onclick = function() {  
+fun3()  
+};  
+function fun3() {  
+document.getElementById("overview").classList.add("hideme");
+document.getElementById("availability").classList.add("hideme");
+document.getElementById("yield").classList.add("hideme");
+document.getElementById("bof").classList.remove("hideme");
+};
+
+/////////
+});
 

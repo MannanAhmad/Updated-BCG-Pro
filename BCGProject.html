@@ -98,7 +98,7 @@
 			</div> -->
 	</div>
 	<div class="col-md-2" style="transform: translate(201px, 17px);">
-	   <div id="QV07" class="qvobject"></div>
+	   <div id="QV04" class="qvobjct"></div>
 	</div>
    <div class="col-md-5 lstt" style=" margin-left: 976px;width: 437px;">
 
@@ -108,29 +108,31 @@
 	 	   <label for="L3D">Last 30 Days</label> -->
 	&nbsp; <input type="radio" id="MOM" name="r2" value="MOM">
 	       <label for="MOM">Month on Month</label>
-	&nbsp; <button type="button" class="btn btn-primary">Clear All</button>
-		   <button type="button" class="btn btn-primary">Download</button>
+	&nbsp; <button id="clearb" class="qvobject" style="margin-top:0px"></button>
+		   <button type="button" class="btn btn-primary" style="background-color:#4477aa">Download</button>
 	 	   
 	</div>
 </nav>
 
 <div class="tab-content1">
 	<div class="row my-2">
-	  <div class="col-sm-4">
+		<div class="col-sm-4">
 		<div class="card mb-1 fixchart">
 		  <div class="card-body">
-			<i class="fa fa-info" aria-hidden="true"></i>
-			<div id="QV01" class="qvobject chart"></div>
+			<img class="info" src="info-icon.svg">
+			<div id="QV01" class="chart qvobject"></div>
 		  </div>
 		</div>
 		<div class="card mb-1 fixchart">
 		  <div class="card-body">
-		   <div id="QV02" class="qvobject chart"></div>
+		  <img class="info" src="info-icon.svg">
+		   <div id="QV02" class="chart qvobject"></div>
 		  </div>
 		</div>
 		<div class="card mb-1 fixchart">
 		  <div class="card-body">
-			<div id="QV03" class="qvobject chart"></div>
+		  <img class="info" src="info-icon.svg">
+			<div id="QV03" class="chart qvobject"></div>
 		  </div>
 		</div>
 	  </div>
@@ -155,23 +157,126 @@
 					</ul>
 			
 		  </div>
-		  <div class="card-body">
+		 
+		  <!--Overview 6(05-10)-->
+		  <div class="card-body " id="overview">
+		  
 			<div class="card mb-1 c1">
 				<div class="card-body">
-					<div id="QV04" class="qvobject chart"></div>
+					<div class="row">
+						<div class="col-md-3">
+							<p class="gtitle">Availability</p>
+						</div>
+						<div class="col-md-3">
+							<div id="QV05" class="chart qvobject"></div>
+						</div>
+						<div class="col-md-3">
+							<div id="QV06" class="chart qvplaceholder"></div>
+						</div>
+						<div class="col-md-3">
+							<div id="QV07" class="chart qvplaceholder"></div>
+						</div>
+					</div>	
+				</div>	
+		   </div>
+		   
+			<div class="card mb-1 c2">
+				<div class="card-body">
+					<div class="row">
+						<div class="col-md-3">
+							<p class="gtitle">Scrap Charge</p>
+						</div>
+						<div class="col-md-6">
+							<div id="QV08" class="chart qvplaceholder"></div>
+						</div>
+						<div class="col-md-3">
+							<div id="QV09" class="chart qvplaceholder"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="card mb-1 c3">
+				<div class="card-body">
+					<div class="row">
+						<div class="col-md-3">
+							<p class="gtitle">Prime Slab Yield</p>
+						</div>
+						<div class="col-md-6">
+							<div id="QV10" class="chart qvobject"></div>
+							<div id="QV11" class="chart qvplaceholder"></div>
+						</div>
+						<div class="col-md-3">
+							<div id="QV12" class="chart qvplaceholder"></div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		  </div>
+		  
+		  
+		  <!--Availability 4(13-16)-->
+		  <div class="card-body hideme" id="availability">
+			<div class="card mb-1 c1">
+				<div class="card-body">
+					<div class="row">
+						<div class="col-md-8" style="">
+							<div id="QV13" class="qvobject"></div>
+						</div>
+						<div class="col-md-4">
+							<div id="QV14" class="qvobject"></div>
+						</div>
+					</div>
+			
 				</div>
 		   </div>
 			<div class="card mb-1 c2">
 				<div class="card-body">
-					<div id="QV05" class="chart qvobject"></div>
+					<div id="QV015" class="chart qvplaceholder"></div>
 				</div>
 			</div>
 			<div class="card mb-1 c3">
 				<div class="card-body">
-					<div id="QV06" class="chart qvobject"></div>
+					<div id="QV016" class="chart qvplaceholder"></div>
 				</div>
 			</div>
 		  </div>
+		  
+		  <!--Yield 4(15-18)-->
+		  <div class="card-body hideme" id="yield">
+			<div class="card mb-1 c1">
+				<div class="card-body">
+					<div id="QV17" class="chart qvobject"></div>
+				</div>
+		   </div>
+			
+			<div class="card mb-1 c3">
+				<div class="card-body">
+					<div id="QV18" class="qvplaceholder chart"></div>
+				</div>
+			</div>
+		  </div>
+		  
+		  <!--BOF 6(19-24)-->
+		  <div class="card-body hideme" id="bof">
+			<div class="card mb-1 c1">
+				<div class="card-body">
+					<div id="QV19" class="qvplaceholder chart"></div>
+				</div>
+		   </div>
+			<div class="card mb-1 c2">
+				<div class="card-body">
+					<div id="QV20" class="chart qvplaceholder"></div>
+				</div>
+			</div>
+			<div class="card mb-1 c3">
+				<div class="card-body">
+					<div id="QV21" class="chart qvplaceholder"></div>
+				</div>
+			</div>
+		  </div>
+		  
 		</div>
 	  </div>
 	</div>
@@ -184,10 +289,6 @@
 
 </div>
 <!--
-<div class="flex-container">
-	<div id="QV08" class="qvplaceholder"></div>
-</div>-->
-
 <!--Error Popup
 <div id="popup">
 	<button type="button" class="close" data-dismiss="modal" aria-label="Close" id="closePopup"><span aria-hidden="true">×</span></button>

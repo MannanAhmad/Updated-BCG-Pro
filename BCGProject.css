@@ -1,3 +1,50 @@
+button#clearb {
+ 
+   
+    background-color: #0d6efd !important;
+  
+    border-radius: 3px;
+}
+
+
+
+button#clearb {
+	height: 36px;
+    width:80px;
+    display: inline-block;
+    transform: translate(-3px, -22px);
+
+}
+
+
+
+#clearb{
+margin-top:0px !important;
+border:0px;
+}
+
+
+.gtitle{
+font: 18px grey; 
+color: #808080;
+font-family: 'Trebuchet MS', sans-serif;
+padding-top:42%;
+padding-bottom:42%;
+vertical-align:bottom;
+}
+
+.hideme {
+	opacity: 0;
+	z-index: -99999;
+	display:none;
+}
+
+img.info {
+ right: 0px;
+    position: absolute;
+    margin-right: 17px;
+}
+
 .menuicon:hover{
 background-color: rgb(255,255,255,0.2) !important;
 }
@@ -39,8 +86,6 @@ background-color:transparent  !important;
 
 .qvplaceholder, .qvobject {
 	flex: 1 1 auto;
-	height: 331px;
-	min-width: 400px;
 //	margin: 5px 0 0 5px;
 }
 
@@ -87,22 +132,32 @@ body{
 	background-color: #f0f0f0 !important;
 }
 
-#QV07{
-	width:5px;
+#QV04{
+	width:145px;
 	height: 25px;
 }
 
-#QV04, #QV05, #QV06{
+#QV05, #QV06, #QV07{
 	height: 193px;
-}
-
-.chart{
-height: 150px;
+	width: 220px;  
 }
 
 #QV01, #QV02, #QV03{
 	height: 193px;
-	
+}
+
+#QV10,#QV11{
+	height: 100px;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    box-sizing: border-box;
+    padding: 5px 5px;
+}
+
+.chart{
+height: 150px;
 }
 
 *{
@@ -134,11 +189,6 @@ height: 150px;
 }
 .p3{
 	background-color: #183375;
-}
-.card-body {
-    flex: 1 1 auto;
-    box-sizing: border-box;
-    padding: 5px 5px;
 }
 /* .sider{
 	background-color: #183375;
