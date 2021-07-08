@@ -1,3 +1,17 @@
+/*!
+* Start Bootstrap - Simple Sidebar v6.0.2 (https://startbootstrap.com/template/simple-sidebar)
+* Copyright 2013-2021 Start Bootstrap
+* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-simple-sidebar/blob/master/LICENSE)
+*/
+// 
+// Scripts
+// 
+
+
+
+
+// custome js
+
 /*
  * Basic responsive mashup template
  * @owner Enter you name here (xxx)
@@ -5,6 +19,149 @@
 /*
  *    Fill in host and port for Qlik engine
  */
+ $(function(){
+
+    $('input:radio[id="scaster"]').change(function(){
+       
+		 var x = document.getElementById("avail-down1");
+		  var y = document.getElementById("avail-down2");
+		  x.style.display = "none";
+		    y.style.display = "none";
+			
+			 var a = document.getElementById("avail-down3");
+		
+		  a.style.display = "block";
+		  a.style.marginTop = "10px";
+
+		
+    });          
+
+});
+
+
+$(function(){
+
+    $('input:radio[id="BOF"]').change(function(){
+       
+		 var x = document.getElementById("avail-down1");
+		  var y = document.getElementById("avail-down2");
+		  x.style.display = "block";
+		    y.style.display = "block";
+			
+			 var a = document.getElementById("avail-down3");
+		  var b = document.getElementById("avail-down4");
+		  a.style.display = "none";
+		    b.style.display = "none";
+    });          
+
+});
+  
+  $(function(){
+
+    $('input:radio[id="SMS2"]').change(function(){
+	var x = document.getElementById("clearb");
+	x.click();
+	
+        window.alert('Work in progress');   
+    });          
+
+});
+ 
+  $(function(){
+
+    $('input:radio[id="SMS3"]').change(function(){
+        window.alert('Work in progress');   
+    });          
+
+});
+ 
+ 
+ 
+ 
+function overview() {
+ var cont=document.querySelector(".rightCont");
+
+    var x = document.getElementById("overview");
+	var a = document.getElementById("availability");
+	var b = document.getElementById("bof");
+	var y= document.getElementById("yield");
+ 
+      x.style.display = "block";
+	   a.style.display = "none";
+	    b.style.display = "none";
+		 y.style.display = "none";
+		 cont.style.height="740px";
+    
+  }
+  
+ function avail() {
+
+console.log(" availabiulit clicked");
+	var cont=document.querySelector(".rightCont");
+	
+    var x = document.getElementById("availability");
+	var o = document.getElementById("overview");
+	var b = document.getElementById("bof");
+	var y= document.getElementById("yield");
+	
+   
+      x.style.display = "block";
+	   o.style.display = "none";
+	    b.style.display = "none";
+		 y.style.display = "none";
+		 
+		 cont.style.height="500px";
+	
+  }
+  
+  function bof() {
+
+
+ var cont=document.querySelector(".rightCont");
+    var x = document.getElementById("bof");
+	var o = document.getElementById("overview");
+	var a = document.getElementById("availability");
+	var y= document.getElementById("yield");
+	
+
+      x.style.display = "block";
+	   o.style.display = "none";
+	    a.style.display = "none";
+		 y.style.display = "none";
+		  cont.style.height="740px";
+	  
+   
+  }
+  
+  function yield() {
+   var cont=document.querySelector(".rightCont");
+
+console.log(" availability clicked");
+    var x = document.getElementById("yield");
+	var o = document.getElementById("overview");
+	var a = document.getElementById("availability");
+	var b= document.getElementById("bof");
+	
+  
+      x.style.display = "block";
+	   o.style.display = "none";
+	    a.style.display = "none";
+		 b.style.display = "none";
+		  cont.style.height="600px";
+	  
+   
+  }
+  
+  
+   
+  
+  
+  
+  
+   
+  
+  
+  
 var prefix = window.location.pathname.substr( 0, window.location.pathname.toLowerCase().lastIndexOf( "/extensions" ) + 1 );
 var config = {
 	host: window.location.hostname,
@@ -78,15 +235,121 @@ require( ["js/qlik"], function ( qlik ) {
 
 	var app23 = qlik.openApp('BCG New (3).qvf', config);
 
+	var app24 = qlik.openApp('BCG New (3).qvf', config);
+
+	var app25 = qlik.openApp('BCG New (3).qvf', config);
+
+	var app26 = qlik.openApp('BCG New (5).qvf', config);
+
+	var app27 = qlik.openApp('BCG New (5).qvf', config);
+
+	var app28 = qlik.openApp('BCG New (5).qvf', config);
+
+	var app29 = qlik.openApp('BCG New (5).qvf', config);
+
+	var app30 = qlik.openApp('BCG New (5).qvf', config);
+
+	var app31 = qlik.openApp('BCG New (5).qvf', config);
+
+	var app32 = qlik.openApp('BCG New (5).qvf', config);
+
+	var app33 = qlik.openApp('BCG New (3).qvf', config);
+
+	var app34 = qlik.openApp('BCG New (3).qvf', config);
+
+	var app35 = qlik.openApp('BCG - SMS1 & SMS2 (1).qvf', config);
+
+	var app36 = qlik.openApp('BCG - SMS1 & SMS2 (1).qvf', config);
+
+	var app37 = qlik.openApp('BCG - SMS1 & SMS2 (1).qvf', config);
+
+	var app38 = qlik.openApp('BCG - SMS1 & SMS2 (1).qvf', config);
+
+	var app39 = qlik.openApp('BCG - SMS1 & SMS2 (1).qvf', config);
+
+	var app40 = qlik.openApp('BCG - SMS1 & SMS2 (1).qvf', config);
+
+	var app41 = qlik.openApp('BCG - SMS1 & SMS2 (1).qvf', config);
+
+	var app42 = qlik.openApp('BCG - SMS1 & SMS2 (1).qvf', config);
+
+	var app43 = qlik.openApp('BCG - SMS1 & SMS2 (1).qvf', config);
+
+	var app44 = qlik.openApp('BCG - SMS1 & SMS2 (1).qvf', config);
+
+	var app45 = qlik.openApp('BCG - SMS1 & SMS2 (1).qvf', config);
+
+	var app46 = qlik.openApp('BCG - SMS1 & SMS2 (1).qvf', config);
+
+	var app47 = qlik.openApp('BCG - SMS1 & SMS2 (1).qvf', config);
+
+	var app48 = qlik.openApp('Copy - BCG - SMS1 & SMS2.qvf', config);
+	
+
 	//get objects -- inserted here --
-	app23.getObject('clearb','mueWQNw');
+	app48.getObject('QV500','LBPNS');
+	app48.getObject('QV015','sZVkAL');
+	app48.getObject('QV08','guPYj');
+	app48.getObject('QV18','EywJDgC');
+	app48.getObject('QV16','habr');
+	app48.getObject('QV17','ctxeP');
+	app48.getObject('QV15','CY');
 	
 	
-	app20.getObject('QV05','HEXCxA');
-	app19.getObject('QV14','mEXJF');
-	app18.getObject('QV13','mGyzxVF');
+	app48.getObject('QV12','VWBLLgj');
 	
-	app14.getObject('QV03','mGyzxVF');
+	app48.getObject('QV10','rUPsT');
+	app48.getObject('QV09','gTqhCJ');
+	app48.getObject('QV02','LBPNS');
+	app48.getObject('QV01','JGEgwK');
+	app48.getObject('clearb','uYynPY');
+	app48.getObject('QV55','ntxEqu');
+	app48.getObject('QV53','jpqeMk');
+	app48.getObject('QV51','pMnSME');
+	app48.getObject('QV54','UmYdRjN');
+	app48.getObject('QV52','pSPTd');
+	app48.getObject('QV50','EPtpzBD');
+	app48.getObject('QV016','PyrtgGJ');
+	
+	
+	app48.getObject('QV19','EPtpzBD');
+	app47.getObject('QV21','UmYdRjN');
+	app46.getObject('QV20','pSPTd');
+	
+	
+	
+	
+	app41.getObject('QV05','TqQqyEY');
+	
+	
+	
+	
+	
+	
+	
+	
+	app48.getObject('QV101','baPBQbs');
+	app48.getObject('QV102','ZNSLR');
+	app48.getObject('QV103','NcYmj');
+	
+	app48.getObject('QV104','pxtEAW');
+	app48.getObject('QV105','CqrrRP');
+	app48.getObject('QV106','BeJUGp');
+	
+	app48.getObject('QV201','VWBLLgj');
+	
+	app48.getObject('QV202','VWBLLgj');
+	
+	
+	
+	
+	
+	
+	app28.getObject('QV14','pXynu');
+	
+	
+	
+	app24.getObject('QV06','HEXCxA');
 	
 	
 	
@@ -97,15 +360,23 @@ require( ["js/qlik"], function ( qlik ) {
 	
 	
 	
-	app1.getObject('QV10','GjbFwNJ');
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
 	
 	app15.getObject('QV04','JJQCA');
 	
-	app10.getObject('QV02','LBPNS');
-	app9.getObject('QV01','APRUWVP');
+	
+	
 	
 	
 	
@@ -132,7 +403,6 @@ require( ["js/qlik"], function ( qlik ) {
 $(document).ready(function () {
 
 
-
 //$('#status').text($('.nav-link.active:last').html());
 
 $('#1id').click(function(){$('#status').text('Overview');});
@@ -150,46 +420,10 @@ $('#4id').click(function(){$('#status').text('BOF Ops Parameter');});
 
 
 //Sub tabs
- document.getElementById("1id").onclick = function() {  
-fun()  
-};  
-function fun() {  
-document.getElementById("overview").classList.remove("hideme");
-document.getElementById("availability").classList.add("hideme");
-document.getElementById("yield").classList.add("hideme");
-document.getElementById("bof").classList.add("hideme");
-};
 
- document.getElementById("2id").onclick = function() {  
-fun1()  
-};  
-function fun1() {  
-document.getElementById("overview").classList.add("hideme");
-document.getElementById("availability").classList.remove("hideme");
-document.getElementById("yield").classList.add("hideme");
-document.getElementById("bof").classList.add("hideme");
-};
 
- document.getElementById("3id").onclick = function() {  
-fun2()  
-};  
-function fun2() {  
-document.getElementById("overview").classList.add("hideme");
-document.getElementById("availability").classList.add("hideme");
-document.getElementById("yield").classList.remove("hideme");
-document.getElementById("bof").classList.add("hideme");
-};
 
- document.getElementById("4id").onclick = function() {  
-fun3()  
-};  
-function fun3() {  
-document.getElementById("overview").classList.add("hideme");
-document.getElementById("availability").classList.add("hideme");
-document.getElementById("yield").classList.add("hideme");
-document.getElementById("bof").classList.remove("hideme");
-};
+ 
 
-/////////
 });
 
